@@ -1,0 +1,120 @@
+@import '../Var.scss';
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: $color-white;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(107, 79, 177, 0.2);
+}
+
+.logo__header {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo__text {
+    display: none;
+    color: $color-primary;
+    font-style: bold;
+    font-weight: 900;
+    font-size: 60px;
+    margin-left: 5px;
+    line-height: normal;
+}
+
+.nav__container {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.button__post {
+    cursor: pointer;
+    color: $color-white;
+    border-radius: 5px;
+    border: none;
+    width: 77px;
+    height: 36px;
+    background: $color-btn-primary;
+    font-family: $theme-font;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.button__post:hover {
+    opacity: 0.9;
+}
+
+.menu__button {
+    color: $color-primary;
+    font-size: 1.4rem;
+    transition: color 300ms;
+}
+
+.menu__button:hover {
+    color: $color-secondary;
+    // transform: scale(1, 1.2);
+    // transition: transform 0.2s ease-in-out;
+}
+
+.menu__button span {
+    margin-left: 2px;
+}
+
+.menu__button span:hover {
+    fill: $color-secondary;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 9.8rem;
+    right: 1.5rem;
+    background-color: $color-white;
+    text-align: right;
+    width: 9.5rem;
+    // height: 8rem;
+    padding-right: 10px;
+    padding-bottom: 1rem;
+    box-shadow: -4px 4px 4px rgba(107, 79, 177, 0.2);
+    overflow: hidden;
+}
+
+.menu-item {
+    margin-bottom: 5%;
+    font-size: 1.2rem;
+}
+
+.menu-item:hover {
+    color: $color-secondary;
+}
+
+@media (min-width: 700px){
+    .logo__text {
+        display: block;
+    }
+
+    .nav__container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .button__post {
+        margin-right: 3.8rem;
+    }
+
+    .menu__button {
+        font-size: 1.8rem;
+    }
+
+    .menu-item {
+        font-size: 1.4rem;
+    }
+}
