@@ -1,0 +1,23 @@
+@import '../Var.scss';
+
+.container__post--detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.back {
+    align-self: flex-start;
+    margin: 2rem;
+}
+
+
+.post__detail--comments {
+    h2{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: $color-secondary;
+    }
+}
