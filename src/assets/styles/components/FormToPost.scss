@@ -2,16 +2,20 @@
 
 .container__card--form {
     position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     width: 340px;
     height: 294px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.04) 100%);
     mix-blend-mode: normal;
     border: 3px solid $color-secondary;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    margin: 15% 35%;
     padding: 2rem 3rem;
 }
 
