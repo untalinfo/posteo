@@ -2,7 +2,7 @@
 
 .container__card--post {
     width: 340px;
-    height: 294px;
+    max-height: 294px;
     background: $color-white;
     box-shadow: 0px 4px 30px rgba(44, 31, 78, 0.2);
     border-radius: 15px;
@@ -10,6 +10,7 @@
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column;
+    margin: 2rem 4rem;
 }
 
 .card__post--header {
