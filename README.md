@@ -2,7 +2,7 @@
 Posteo is a web application that allows each user who enters the page to make posts, like, dislike or comment on other posts.
 
 ## Visit the application 🚀
-[POSTEO]()
+[POSTEO](https://untalinfo.github.io/posteo/)
 
 ## App sketch on Figma ✏️
 [Posteo scketch](https://www.figma.com/file/2tXgtalsrv9BLToSSLk8r3/Posteo?node-id=0%3A1)
