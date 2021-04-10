@@ -2,8 +2,11 @@
 Posteo is a web application that allows each user who enters the page to make posts, like, dislike or comment on other posts.
 
 ## Visit the application 🚀
-
 [POSTEO]()
+
+## App sketch on Figma ✏️
+[Posteo scketch](https://www.figma.com/file/2tXgtalsrv9BLToSSLk8r3/Posteo?node-id=0%3A1)
+
 ## Getting Started with Create React App 📋
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -39,7 +42,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 * [ReactJS](https://reactjs.org/) - The web framework used
 * [React Router](https://maven.apache.org/) - Application routing
 * [SASS](https://sass-lang.com/) - preprocessor to css
-* [GithubPages](https://pages.github.com/) - Hosted application
+* [MockAPI](https://mockapi.io/) - Fake API
+* [Github Pages](https://pages.github.com/) - Hosted application
+
 
 ### `Author` ✒️
 
