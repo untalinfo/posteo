@@ -5,14 +5,7 @@ import instagram from '../assets/images/instagram-icon.png'
 import twitter from '../assets/images/twitter-icon.png'
 import facebook from '../assets/images/facebook-icon.png'
 
-/**
- * Return Component Footer
- * 
- * @component
- * return (
- *  <footer className="container__footer" />
- * )
- */
+
 const Footer = () => {
     return (
         <footer className="container__footer">

@@ -9,14 +9,6 @@ import _ from "lodash";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-/**
- * Return Component HomePage
- *
- * @component
- * return (
- *  <div className='container__post--detail' />
- * )
- */
 function PostDetail() {
   const [showFormModal, setShowFormModal] = useState(false);
   const [post, setPost] = useState(null);
@@ -33,6 +25,7 @@ function PostDetail() {
 
   useEffect(() => {
     getPost();
+    // eslint-disable-next-line
   }, []);
 
   const createComment = (data) => {
@@ -40,26 +33,36 @@ function PostDetail() {
       .post(
         `https://6070f8be50aaea001728413d.mockapi.io/posts/${id}/comments`,
         data
-      )
-      .then((response) => {
-        getPost();
+      ).then(()=>{
+          getPost();
+      })
+      .catch(() => {
+        alert("Hubo un error creando el comentario");
       });
   };
 
   const createLike = () => {
     axios
-      .post(`https://6070f8be50aaea001728413d.mockapi.io/posts/${id}/likes`)
+      .post(
+        `https://6070f8be50aaea001728413d.mockapi.io/posts/${id}/likes`
+      )
       .then((response) => {
         getPost();
-      });
+      }).catch(()=>{
+        alert("No se pudo dar me gusta a esta publicacion")
+    });;
   };
 
   const createDislike = () => {
     axios
-      .post(`https://6070f8be50aaea001728413d.mockapi.io/posts/${id}/dislike`)
+      .post(
+        `https://6070f8be50aaea001728413d.mockapi.io/posts/${id}/dislike`
+      )
       .then((response) => {
         getPost();
-      });
+      }).catch(()=>{
+        alert("No se pudo dar no me gusta a este post")
+    });
   };
 
   return (

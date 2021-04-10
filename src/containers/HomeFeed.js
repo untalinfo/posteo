@@ -7,14 +7,7 @@ import Form from "../components/FormToPost";
 import axios from "axios";
 import _ from "lodash";
 
-/**
- * Return Component HomeFeed
- *
- * @component
- * return (
- *  <div className='home' />
- * )
- */
+
 function HomeFeed() {
   const [showFormModal, setShowFormModal] = useState(false);
   const [formModalType, setFormModalType] = useState("post");
@@ -48,20 +41,21 @@ function HomeFeed() {
       .then((response) => {});
   };
 
-  const createLike = () => {
+  const createLike = (id) => {
+    console.log(selectedPostId);
     axios
       .post(
-        `https://6070f8be50aaea001728413d.mockapi.io/posts/${selectedPostId}/likes`
+        `https://6070f8be50aaea001728413d.mockapi.io/posts/${id}/likes`
       )
       .then((response) => {
         getPosts();
       });
   };
 
-  const createDislike = () => {
+  const createDislike = (id) => {
     axios
       .post(
-        `https://6070f8be50aaea001728413d.mockapi.io/posts/${selectedPostId}/dislike`
+        `https://6070f8be50aaea001728413d.mockapi.io/posts/${id}/dislike`
       )
       .then((response) => {
         getPosts();
@@ -95,12 +89,10 @@ function HomeFeed() {
               post={post}
               key={index}
               onDislike={() => {
-                setSelectedPostId(post.id);
-                createDislike();
+                createDislike(post.id);
               }}
               onLike={() => {
-                setSelectedPostId(post.id);
-                createLike();
+                  createLike(post.id);
               }}
             />
           );

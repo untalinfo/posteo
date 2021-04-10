@@ -2,18 +2,8 @@ import React from "react";
 import "../assets/styles/components/FormToPost.scss";
 import btnClose from "../assets/images/btn-close.png";
 
-/**
- * Return Component Form to post or comment
- *
- * @component
- * return (
- *  <div className='container__card--form' />
- * )
- */
+
 const FormToPost = ({ setShowFormModal, type, onSubmit }) => {
-
-
-
 
   const handleSubmit = (event) => {
     event.preventDefault();

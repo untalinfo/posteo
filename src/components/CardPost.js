@@ -5,14 +5,8 @@ import btnDislike from "../assets/images/dislike-icon.png";
 import btnComment from "../assets/images/comment-icon.png";
 import { Link } from "react-router-dom";
 import moment from "moment";
-/**
- * Return Component card post or comments
- *
- * @component
- * return (
- *  <div className="container__card--post" />
- * )
- */
+
+
 const CardPost = ({ type, setShowCommentModal, post, onLike, onDislike }) => {
 
   if (!post) return;

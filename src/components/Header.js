@@ -4,14 +4,7 @@ import logo from "../assets/images/posteoLogoMobile.png";
 import logoDesktop from "../assets/images/posteoLogoDesktop.png";
 import logoText from "../assets/images/posteoLogoText.png";
 
-/**
- * Return Component Header
- *
- * @component
- * return (
- *  <header />
- * )
- */
+
 const Header = ({ setShowFormModal }) => {
   return (
     <header>
@@ -32,14 +25,6 @@ const Header = ({ setShowFormModal }) => {
   );
 };
 
-/**
- * Return Subomponent Menu-dropdown
- *
- * @component
- * return (
- *  <div className='dropdown' />
- * )
- */
 function Menu() {
   return (
     <div className="dropdown">
@@ -48,15 +33,15 @@ function Menu() {
       </label>
       <input type="checkbox" id="prueba"></input>
       <div className="dropdown-content">
-        <a href="#" className="menu-item">
+        <a href="menuItem" className="menu-item">
           Mi perfil
         </a>
         <br />
-        <a href="#" className="menu-item">
+        <a href="menuItem" className="menu-item">
           Mensajes
         </a>
         <br />
-        <a href="#" className="menu-item">
+        <a href="menuItem" className="menu-item">
           Grupos
         </a>
         <br />
