@@ -5,7 +5,14 @@ import logoDesktop from '../assets/images/posteoLogoDesktop.png';
 import logoText from '../assets/images/posteoLogoText.png'
 import Form from '../components/FormToPost'
 
-
+/**
+ * Return Component Header
+ * 
+ * @component
+ * return (
+ *  <header />
+ * )
+ */
 const Header = () => {
     function handleClick(e) {
         e.preventDefault();
@@ -32,6 +39,14 @@ const Header = () => {
     );
 };
 
+/**
+ * Return Subomponent Menu-dropdown
+ * 
+ * @component
+ * return (
+ *  <div className='dropdown' />
+ * )
+ */
 function Menu(){
 
     return (

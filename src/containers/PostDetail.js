@@ -11,7 +11,7 @@ import CardPost from '../components/CardPost'
  * 
  * @component
  * return (
- *  <div className='HomePage' />
+ *  <div className='container__post--detail' />
  * )
  */
 function HomeFeed() {

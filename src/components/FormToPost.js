@@ -2,6 +2,14 @@ import React from 'react';
 import '../assets/styles/components/FormToPost.scss';
 import btnClose from '../assets/images/btn-close.png';
 
+/**
+ * Return Component Form to post or comment
+ * 
+ * @component
+ * return (
+ *  <div className='container__card--form' />
+ * )
+ */
 const FormToPost = () => {
 
     return (
@@ -19,12 +27,28 @@ const FormToPost = () => {
     );
 };
 
+/**
+ * Return Subcomponent Title to post or comment
+ * 
+ * @component
+ * return (
+ *  <div className='card__title input-txt' />
+ * )
+ */
 const Title = (props) => {
     return (
         <input type="text" placeholder={props.children} className="card__title input-txt" autoFocus required></input>
     );
 };
 
+/**
+ * Return Subcomponent Button to post or comment
+ * 
+ * @component
+ * return (
+ *  <div className='card__btnPost' />
+ * )
+ */
 const BtnPost = (props) => {
     return (
         <buttom className="card__btnPost">

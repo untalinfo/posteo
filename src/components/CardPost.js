@@ -5,6 +5,14 @@ import btnDislike from '../assets/images/dislike-icon.png';
 import btnComment from '../assets/images/comment-icon.png';
 import { Link } from 'react-router-dom'
 
+/**
+ * Return Component card post or comments
+ * 
+ * @component
+ * return (
+ *  <div className="container__card--post" />
+ * )
+ */
 const CardPost = () => {
     return (
         <div className="container__card--post">
@@ -21,6 +29,14 @@ const CardPost = () => {
     );
 };
 
+/**
+ * Return Subcomponent card Title
+ * 
+ * @component
+ * return (
+ *  <Link to="/post_detail/:id" />
+ * )
+ */
 const CardTitle = () => {
     return (
         <Link to="/post_detail/:id">
@@ -29,6 +45,14 @@ const CardTitle = () => {
     )
 }
 
+/**
+ * Return Subcomponent card buttons action
+ * 
+ * @component
+ * return (
+ *  <div className="card__post--actions" />
+ * )
+ */
 const CardActions = () => {
     return (
         <div className="card__post--actions">
