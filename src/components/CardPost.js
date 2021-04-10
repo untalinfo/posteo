@@ -3,13 +3,14 @@ import '../assets/styles/components/CardPost.scss';
 import btnLike from '../assets/images/like-icon.png';
 import btnDislike from '../assets/images/dislike-icon.png';
 import btnComment from '../assets/images/comment-icon.png';
+import { Link } from 'react-router-dom'
 
 const CardPost = () => {
     return (
         <div className="container__card--post">
             <div className="card__post--header">
                 <div className="data">
-                    <h3>Nombre post</h3>
+                    <CardTitle/>
                     <p>user@gmail.com</p>
                 </div>
                 <p className="date">12/04/2021</p>
@@ -19,6 +20,14 @@ const CardPost = () => {
         </div>
     );
 };
+
+const CardTitle = () => {
+    return (
+        <Link to="/post_detail/:id">
+            <h3>Nombre post</h3>
+        </Link>
+    )
+}
 
 const CardActions = () => {
     return (
