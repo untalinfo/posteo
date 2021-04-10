@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/posteo/static/css/main.ebc36437.chunk.css",
+    "main.js": "/posteo/static/js/main.ef329c4b.chunk.js",
+    "main.js.map": "/posteo/static/js/main.ef329c4b.chunk.js.map",
+    "runtime-main.js": "/posteo/static/js/runtime-main.c679f375.js",
+    "runtime-main.js.map": "/posteo/static/js/runtime-main.c679f375.js.map",
+    "static/js/2.4a32626c.chunk.js": "/posteo/static/js/2.4a32626c.chunk.js",
+    "static/js/2.4a32626c.chunk.js.map": "/posteo/static/js/2.4a32626c.chunk.js.map",
+    "index.html": "/posteo/index.html",
+    "static/css/main.ebc36437.chunk.css.map": "/posteo/static/css/main.ebc36437.chunk.css.map",
+    "static/js/2.4a32626c.chunk.js.LICENSE.txt": "/posteo/static/js/2.4a32626c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c679f375.js",
+    "static/js/2.4a32626c.chunk.js",
+    "static/css/main.ebc36437.chunk.css",
+    "static/js/main.ef329c4b.chunk.js"
+  ]
+}
