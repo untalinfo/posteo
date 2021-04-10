@@ -59,32 +59,7 @@ header {
 
 .menu__button:hover {
     color: $color-secondary;
-    // transform: scale(1, 1.2);
-    // transition: transform 0.2s ease-in-out;
-}
-
-.menu__button span {
-    margin-left: 2px;
-}
-
-.menu__button span:hover {
-    fill: $color-secondary;
-}
-
-.dropdown{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 9.8rem;
-    right: 1.5rem;
-    background-color: $color-white;
-    text-align: right;
-    width: 9.5rem;
-    // height: 8rem;
-    padding-right: 10px;
-    padding-bottom: 1rem;
-    box-shadow: -4px 4px 4px rgba(107, 79, 177, 0.2);
-    overflow: hidden;
+    cursor: pointer;
 }
 
 .menu-item {
@@ -95,6 +70,32 @@ header {
 .menu-item:hover {
     color: $color-secondary;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: -10px;
+    background-color: $color-white;
+    box-shadow: -4px 4px 4px rgba(107, 79, 177, 0.2);
+    padding: 12px 16px;
+    text-align: right;
+    z-index: 1;
+}
+
+input[type=checkbox]:checked ~ .dropdown-content {
+    display: block;
+}
+
 
 @media (min-width: 700px){
     .logo__text {
@@ -116,5 +117,9 @@ header {
 
     .menu-item {
         font-size: 1.4rem;
+    }
+
+    .dropdown-content{
+        top: 60px;
     }
 }

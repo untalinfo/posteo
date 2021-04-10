@@ -3,6 +3,7 @@ import '../assets/styles/components/Header.scss'
 import logo from '../assets/images/posteoLogoMobile.png';
 import logoDesktop from '../assets/images/posteoLogoDesktop.png';
 import logoText from '../assets/images/posteoLogoText.png'
+import Form from '../components/FormToPost'
 
 
 const Header = () => {
@@ -15,58 +16,38 @@ const Header = () => {
                 </picture>
                 <img src={logoText} alt="" className="logo__text"></img>
             </div>
+            {/* prueba dropdown
+            <div class="dropdownPrueba">
+                    <label for="prueba">click</label>
+                    <input type="checkbox" id="prueba"></input>
+                    <div class="dropdown-content">
+                        <p>Hello World!</p>
+                    </div>
+                </div>
+                Cierra prueba dropdown */}
             <div className="nav__container">
                 <button className="button__post">POST</button>
                 <Menu></Menu>
             </div>
+            <Form/>
         </header>
     );
 };
 
 function Menu(props){
-    const [open, setOpen] = useState(false);
 
     return (
-        <>
-            <a href="#" className="menu__button" onClick={() => setOpen(!open)}>
-                Opciones
-                
-            </a>
-            {open && props.children}
-            <Dropdown />
-        </>
-    );
-}
-
-function Dropdown(){
-
-    const [activeMenu, setActiveMenu] = useState('main');
-    const [menuHeight, setMenuHeight] = useState(null);
-    const dropdownRef = useRef(null);
-
-    useEffect(() => {
-        setMenuHeight(dropdownRef.current?.firstChild.offsetHeight)
-    }, [])
-
-    function calcHeight(el) {
-        const height = el.offsetHeight;
-        setMenuHeight(height);
-    }
-
-    function DropdownItem(props) {
-        return (
-            <a href="#" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
-            {props.children}
-        </a>
-        );
-    }
-    return (
-        <div className="dropdown">
-            <DropdownItem>Mi perfil</DropdownItem>
-            <DropdownItem>Mensajes</DropdownItem>
-            <DropdownItem>Grupos</DropdownItem>
+        <div class="dropdown">
+            <label for="prueba" className="menu__button">Opciones</label>
+            <input type="checkbox" id="prueba" ></input>
+            <div className="dropdown-content">
+                <a href="#" className="menu-item">Mi perfil</a><br/>
+                <a href="#" className="menu-item">Mensajes</a><br/>
+                <a href="#" className="menu-item">Grupos</a><br/>
+            </div>
         </div>
     );
 }
+
 
 export default Header;
